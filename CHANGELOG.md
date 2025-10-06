@@ -2,6 +2,23 @@
 
 ## Latest Updates
 
+### Meet Exclusion & Class/District Rankings (2025-10-06)
+
+**Added:** Meet exclusion from rankings
+- New `exclude_from_rankings` column in `meets` table
+- Toggle button in Meet History page to include/exclude meets
+- Excluded meets are filtered out from all ranking queries
+- Visual indicators (✓/🚫) show exclusion status
+
+**Added:** Class/District Rankings page
+- New page showing rankings by MSHSAA class (1-5) and district
+- Uses `reference/missouri_schools.csv` for school classifications
+- Filters: Class, District, Gender (Boys/Girls/All)
+- Only includes non-excluded meets
+- Automatic team-to-school matching
+
+**Migration:** Run `python migrate_add_exclusion.py` to add exclusion column to existing databases
+
 ### Database Fixes (2025-10-06)
 
 **Fixed:** SQLAlchemy `DetachedInstanceError` issues
