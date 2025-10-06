@@ -1,0 +1,419 @@
+Class,District,School
+Class 1,District 1,Advance
+Class 1,District 1,Alton
+Class 1,District 1,Bernie
+Class 1,District 1,Bismarck
+Class 1,District 1,Bloomfield
+Class 1,District 1,Campbell
+Class 1,District 1,Crossroads College Preparatory
+Class 1,District 1,Crystal City
+Class 1,District 1,Ellington
+Class 1,District 1,Eminence
+Class 1,District 1,Koshkonong
+Class 1,District 1,Leopold
+Class 1,District 1,Meadow Heights
+Class 1,District 1,Naylor
+Class 1,District 1,Oak Ridge
+Class 1,District 1,Richland (Essex)
+Class 1,District 1,St. Vincent
+Class 1,District 1,Summersville
+Class 1,District 1,Valley
+Class 1,District 1,Van Buren
+Class 1,District 1,Viburnum
+Class 1,District 1,Winona
+Class 1,District 1,Zalma
+Class 1,District 2,Billings
+Class 1,District 2,Blue Eye
+Class 1,District 2,Chadwick
+Class 1,District 2,Dadeville
+Class 1,District 2,Dora
+Class 1,District 2,Everton
+Class 1,District 2,Exeter
+Class 1,District 2,Fair Play
+Class 1,District 2,Galena
+Class 1,District 2,Gloria Deo Academy
+Class 1,District 2,Hermitage
+Class 1,District 2,Liberal
+Class 1,District 2,Macks Creek
+Class 1,District 2,Marion C. Early
+Class 1,District 2,McAuley Catholic
+Class 1,District 2,Montrose (Appleton City)
+Class 1,District 2,Norwood
+Class 1,District 2,Otterville
+Class 1,District 2,School of the Ozarks
+Class 1,District 2,Sheldon
+Class 1,District 2,Stoutland
+Class 1,District 2,Thomas Jefferson Independent Day
+Class 1,District 2,Walnut Grove
+Class 1,District 2,Wheatland
+Class 1,District 3,Braymer
+Class 1,District 3,Calvary Lutheran
+Class 1,District 3,Chamois
+Class 1,District 3,Christian Fellowship Sr.
+Class 1,District 3,Clopton
+Class 1,District 3,Columbia Independent
+Class 1,District 3,Community
+Class 1,District 3,Glasgow
+Class 1,District 3,Green Ridge
+Class 1,District 3,Hardin-Central
+Class 1,District 3,Jamestown
+Class 1,District 3,Knox County
+Class 1,District 3,Marion County
+Class 1,District 3,New Haven
+Class 1,District 3,Norborne
+Class 1,District 3,North Shelby
+Class 1,District 3,Northeast (Cairo)
+Class 1,District 3,Northwest (Hughesville)
+Class 1,District 3,Prairie Home
+Class 1,District 3,Scotland County
+Class 1,District 3,Sturgeon
+Class 1,District 3,Van-Far
+Class 1,District 3,Vienna
+Class 1,District 3,Wellsville-Middletown
+Class 1,District 4,Academie Lafayette
+Class 1,District 4,Bishop LeBlond
+Class 1,District 4,Brunswick
+Class 1,District 4,Craig
+Class 1,District 4,Faith Christian Acad HS
+Class 1,District 4,Hale (Bosworth)
+Class 1,District 4,Kingsville
+Class 1,District 4,Maysville
+Class 1,District 4,Meadville
+Class 1,District 4,Midway
+Class 1,District 4,Mound City
+Class 1,District 4,Newtown-Harris (Grundy County)
+Class 1,District 4,North Andrew
+Class 1,District 4,North Nodaway
+Class 1,District 4,Northland Christian
+Class 1,District 4,Northwestern (Mendon)
+Class 1,District 4,Polo
+Class 1,District 4,Rock Port
+Class 1,District 4,South Holt
+Class 1,District 4,South Nodaway (Jefferson Conception)
+Class 1,District 4,Southwest (Livingston County)
+Class 1,District 4,St. Joseph Christian
+Class 1,District 4,St. Paul Lutheran (Concordia)
+Class 1,District 4,Tarkio (Fairfax)
+Class 1,District 4,West Nodaway (Nodaway-Holt)
+Class 2,District 1,Arcadia Valley
+Class 2,District 1,Bishop DuBourg
+Class 2,District 1,Brentwood
+Class 2,District 1,Chaffee
+Class 2,District 1,Clearwater
+Class 2,District 1,Duchesne
+Class 2,District 1,East Carter
+Class 2,District 1,Grandview (Hillsboro)
+Class 2,District 1,Greenville
+Class 2,District 1,Jefferson (Festus)
+Class 2,District 1,Kelly
+Class 2,District 1,Kingston
+Class 2,District 1,Lutheran North
+Class 2,District 1,Malden
+Class 2,District 1,McKinley Classical Leadership
+Class 2,District 1,Neelyville
+Class 2,District 1,Principia
+Class 2,District 1,Saxony Lutheran
+Class 2,District 1,Scott City
+Class 2,District 1,Senath-Hornersville
+Class 2,District 1,St. Pius X (Festus)
+Class 2,District 1,Twin Rivers
+Class 2,District 1,Valle Catholic
+Class 2,District 1,Veritas Christian Acad
+Class 2,District 1,West County
+Class 2,District 1,Woodland
+Class 2,District 2,Ash Grove
+Class 2,District 2,Cabool
+Class 2,District 2,Conway
+Class 2,District 2,Crane
+Class 2,District 2,Diamond
+Class 2,District 2,El Dorado Springs
+Class 2,District 2,Fordland
+Class 2,District 2,Gainesville
+Class 2,District 2,Hartville
+Class 2,District 2,New Covenant Academy
+Class 2,District 2,Osceola
+Class 2,District 2,Pierce City
+Class 2,District 2,Pleasant Hope
+Class 2,District 2,Purdy
+Class 2,District 2,Sarcoxie
+Class 2,District 2,Seymour
+Class 2,District 2,Skyline
+Class 2,District 2,Southwest (Washburn)
+Class 2,District 2,Sparta
+Class 2,District 2,Spokane
+Class 2,District 2,Stockton
+Class 2,District 2,Thayer
+Class 2,District 3,Belle
+Class 2,District 3,Bourbon
+Class 2,District 3,Clark County
+Class 2,District 3,Crocker
+Class 2,District 3,Elsberry
+Class 2,District 3,Fatima
+Class 2,District 3,Harrisburg
+Class 2,District 3,Hermann
+Class 2,District 3,Highland
+Class 2,District 3,Laquey
+Class 2,District 3,Licking
+Class 2,District 3,Linn
+Class 2,District 3,Mark Twain
+Class 2,District 3,Monroe City
+Class 2,District 3,New Bloomfield
+Class 2,District 3,Palmyra
+Class 2,District 3,Paris
+Class 2,District 3,Plato
+Class 2,District 3,Russellville
+Class 2,District 3,South Callaway
+Class 2,District 3,South Shelby
+Class 2,District 3,Steelville
+Class 2,District 3,Westran
+Class 2,District 3,Whitfield
+Class 2,District 4,Adrian
+Class 2,District 4,Barstow
+Class 2,District 4,Brookfield
+Class 2,District 4,Butler
+Class 2,District 4,Carrollton
+Class 2,District 4,Crest Ridge
+Class 2,District 4,East Buchanan
+Class 2,District 4,Lafayette County
+Class 2,District 4,Lathrop
+Class 2,District 4,Lawson
+Class 2,District 4,Lexington
+Class 2,District 4,Lone Jack
+Class 2,District 4,Lutheran (Kansas City)
+Class 2,District 4,Mid-Buchanan
+Class 2,District 4,North Platte
+Class 2,District 4,Penney
+Class 2,District 4,Platesburg
+Class 2,District 4,Salisbury
+Class 2,District 4,Sherwood
+Class 2,District 4,Stover
+Class 2,District 4,University Academy Charter
+Class 2,District 4,West Platte
+Class 2,District 4,Windsor
+Class 3,District 1,Bayless
+Class 3,District 1,Cardinal Ritter
+Class 3,District 1,Central (Park Hills)
+Class 3,District 1,Collegiate School of Med-Bio Science
+Class 3,District 1,Doniphan
+Class 3,District 1,Fredericktown
+Class 3,District 1,Gateway Science Charter
+Class 3,District 1,Herculaneum
+Class 3,District 1,Incarnate Word Academy
+Class 3,District 1,Lift for Life Academy Charter
+Class 3,District 1,Maplewood-Richmond Hts.
+Class 3,District 1,Metro
+Class 3,District 1,Normandy Collaborative
+Class 3,District 1,Notre Dame (Cape Girardeau)
+Class 3,District 1,Notre Dame (St. Louis)
+Class 3,District 1,Potosi
+Class 3,District 1,Ste. Genevieve
+Class 3,District 1,STEAM Academy
+Class 3,District 1,Vashon
+Class 3,District 1,Villa Duchesne
+Class 3,District 1,Visitation Academy
+Class 3,District 2,Aurora
+Class 3,District 2,Ava
+Class 3,District 2,Buffalo
+Class 3,District 2,Cassville
+Class 3,District 2,Clever
+Class 3,District 2,East Newton
+Class 3,District 2,Fair Grove
+Class 3,District 2,Forsyth
+Class 3,District 2,Hollister
+Class 3,District 2,Houston
+Class 3,District 2,Lamar
+Class 3,District 2,Liberty (Mountain View)
+Class 3,District 2,Mountain Grove
+Class 3,District 2,Mt. Vernon
+Class 3,District 2,New Heights Christian Acad
+Class 3,District 2,Osage
+Class 3,District 2,Reeds Spring
+Class 3,District 2,Salem
+Class 3,District 2,Seneca
+Class 3,District 2,Springfield Catholic
+Class 3,District 2,Strafford
+Class 3,District 2,Warsaw
+Class 3,District 2,Willow Springs
+Class 3,District 3,Blair Oaks
+Class 3,District 3,Bowling Green
+Class 3,District 3,California
+Class 3,District 3,Centralia
+Class 3,District 3,Cuba
+Class 3,District 3,Eldon
+Class 3,District 3,Fulton
+Class 3,District 3,Hallsville
+Class 3,District 3,Helias Catholic
+Class 3,District 3,Lutheran St. Charles
+Class 3,District 3,Montgomery County
+Class 3,District 3,North Callaway
+Class 3,District 3,Owensville
+Class 3,District 3,Southern Boone
+Class 3,District 3,St. Charles West
+Class 3,District 3,St. Clair
+Class 3,District 3,St. Francis Borgia
+Class 3,District 3,St. James
+Class 3,District 3,Sullivan
+Class 3,District 3,Versailles
+Class 3,District 3,Winfield
+Class 3,District 3,Wright City
+Class 3,District 4,Benton
+Class 3,District 4,Boonville
+Class 3,District 4,Center
+Class 3,District 4,Central (Kansas City)
+Class 3,District 4,Chillicothe
+Class 3,District 4,Clinton
+Class 3,District 4,Ewing Marion Kauffman
+Class 3,District 4,Guadalupe Centers Charter
+Class 3,District 4,Holden
+Class 3,District 4,KIPP KC Legacy
+Class 3,District 4,Knob Noster
+Class 3,District 4,Macon
+Class 3,District 4,Maryville
+Class 3,District 4,Moberly
+Class 3,District 4,Oak Grove
+Class 3,District 4,Odessa
+Class 3,District 4,Paseo Academy
+Class 3,District 4,Pembroke Hill
+Class 3,District 4,Richmond
+Class 3,District 4,St. Michael the Archangel
+Class 4,District 1,Affton
+Class 4,District 1,Central (Cape Girardeau)
+Class 4,District 1,Clayton
+Class 4,District 1,Confluence Prep Academy Charter (Grand Center Arts Charter)
+Class 4,District 1,DeSoto
+Class 4,District 1,Festus
+Class 4,District 1,Gateway (Golden International Studies)
+Class 4,District 1,Hillsboro
+Class 4,District 1,John Burroughs
+Class 4,District 1,Lutheran South
+Class 4,District 1,Miller Career Academy (Sumner)
+Class 4,District 1,North County
+Class 4,District 1,Perryville
+Class 4,District 1,Poplar Bluff
+Class 4,District 1,University City
+Class 4,District 1,Webster Groves
+Class 4,District 1,Windsor (Imperial)
+Class 4,District 2,Bolivar
+Class 4,District 2,Camdenton
+Class 4,District 2,Carl Junction
+Class 4,District 2,Central (Springfield)
+Class 4,District 2,Hillcrest
+Class 4,District 2,Logan-Rogersville
+Class 4,District 2,Marshfield
+Class 4,District 2,McDonald County
+Class 4,District 2,Monett
+Class 4,District 2,Nevada
+Class 4,District 2,Notre Dame de Sion
+Class 4,District 2,Pacific
+Class 4,District 2,Parkview
+Class 4,District 2,Rockwood Summit
+Class 4,District 2,Summit Christian Academy
+Class 4,District 2,Union
+Class 4,District 2,Washington
+Class 4,District 2,West Plains
+Class 4,District 3,Ft. Zumwalt East
+Class 4,District 3,Ft. Zumwalt South
+Class 4,District 3,Hannibal
+Class 4,District 3,Hazelwood East
+Class 4,District 3,Holt
+Class 4,District 3,Kirksville
+Class 4,District 3,McCluer
+Class 4,District 3,Mexico
+Class 4,District 3,MICDS
+Class 4,District 3,Nerinx Hall
+Class 4,District 3,Orchard Farm
+Class 4,District 3,Parkway Central
+Class 4,District 3,Parkway North
+Class 4,District 3,St. Charles
+Class 4,District 3,Ursuline Academy
+Class 4,District 3,Warrenton
+Class 4,District 4,Belton
+Class 4,District 4,Capital City
+Class 4,District 4,Excelsior Springs
+Class 4,District 4,Grandview
+Class 4,District 4,Harrisonville
+Class 4,District 4,Jefferson City
+Class 4,District 4,Kearney
+Class 4,District 4,Lincoln College Prep
+Class 4,District 4,Marshall
+Class 4,District 4,Northeast (Kansas City)
+Class 4,District 4,Pleasant Hill
+Class 4,District 4,Raytown
+Class 4,District 4,Savannah
+Class 4,District 4,Smithville
+Class 4,District 4,St. Pius X (Kansas City)
+Class 4,District 4,Van Horn
+Class 4,District 4,Warrensburg
+Class 4,District 4,Winnetonka
+Class 5,District 1,Cor Jesu Academy
+Class 5,District 1,Eureka
+Class 5,District 1,Farmington
+Class 5,District 1,Fox
+Class 5,District 1,Jackson
+Class 5,District 1,Kirkwood
+Class 5,District 1,Ladue Horton Watkins
+Class 5,District 1,Lafayette (Wildwood)
+Class 5,District 1,Lindbergh
+Class 5,District 1,Marquette
+Class 5,District 1,Mehlville
+Class 5,District 1,Northwest (Cedar Hill)
+Class 5,District 1,Oakville
+Class 5,District 1,Parkway South
+Class 5,District 1,Parkway West
+Class 5,District 1,Seckman
+Class 5,District 1,St. Joseph's Academy
+Class 5,District 1,Westminster Christian Academy
+Class 5,District 2,Branson
+Class 5,District 2,Carthage
+Class 5,District 2,Glendale
+Class 5,District 2,Joplin
+Class 5,District 2,Kickapoo
+Class 5,District 2,Lebanon
+Class 5,District 2,Neosho (Neosho Christian)
+Class 5,District 2,Nixa
+Class 5,District 2,Ozark
+Class 5,District 2,Raymore-Peculiar
+Class 5,District 2,Republic
+Class 5,District 2,Rolla
+Class 5,District 2,Ruskin
+Class 5,District 2,Smith-Cotton
+Class 5,District 2,St. Teresa's Academy
+Class 5,District 2,Waynesville
+Class 5,District 2,Webb City
+Class 5,District 2,Willard
+Class 5,District 3,Battle
+Class 5,District 3,Father Tolton Regional Catholic
+Class 5,District 3,Francis Howell Central
+Class 5,District 3,Francis Howell
+Class 5,District 3,Francis Howell North
+Class 5,District 3,Ft. Zumwalt North
+Class 5,District 3,Ft. Zumwalt West
+Class 5,District 3,Hazelwood Central
+Class 5,District 3,Hazelwood West
+Class 5,District 3,Hickman
+Class 5,District 3,Liberty (Wentzville)
+Class 5,District 3,North Point
+Class 5,District 3,Pattonville
+Class 5,District 3,Ritenour
+Class 5,District 3,Rock Bridge
+Class 5,District 3,St. Dominic
+Class 5,District 3,Timberland
+Class 5,District 3,Troy Buchanan
+Class 5,District 4,Blue Springs
+Class 5,District 4,Blue Springs South
+Class 5,District 4,Central (St. Joseph)
+Class 5,District 4,Fort Osage
+Class 5,District 4,Grain Valley
+Class 5,District 4,Lee's Summit
+Class 5,District 4,Lee's Summit North
+Class 5,District 4,Lee's Summit West
+Class 5,District 4,Liberty
+Class 5,District 4,Liberty North
+Class 5,District 4,North Kansas City
+Class 5,District 4,Oak Park
+Class 5,District 4,Park Hill
+Class 5,District 4,Park Hill South
+Class 5,District 4,Platte County
+Class 5,District 4,Staley
+Class 5,District 4,Truman
+Class 5,District 4,William Chrisman

@@ -1,0 +1,8 @@
+# Example URLs for batch import
+# Add one URL per line
+# Lines starting with # are comments and will be ignored
+
+# Frank Schultz Invitational 2025
+https://mo.milesplit.com/meets/703864-frank-schultz-invitational-2025/results/1221124/raw
+
+# Add your own URLs here...
