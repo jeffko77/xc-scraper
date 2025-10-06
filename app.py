@@ -253,19 +253,31 @@ def meet_history_page(db: Database):
     if meets:
         st.success(f"Total meets imported: {len(meets)}")
 
-        data = []
+        # Display meets with exclude toggle
         for meet in meets:
             race_count = len(meet.races)
-            data.append({
-                "Meet": meet.name,
-                "Date": meet.date or "N/A",
-                "Races": race_count,
-                "URL": meet.url,
-                "Imported": meet.created_at.strftime("%Y-%m-%d %H:%M")
-            })
+            excluded = bool(meet.exclude_from_rankings)
 
-        df = pd.DataFrame(data)
-        st.dataframe(df, hide_index=True, use_container_width=True)
+            col1, col2, col3 = st.columns([5, 2, 1])
+
+            with col1:
+                status_icon = "🚫" if excluded else "✓"
+                st.write(f"{status_icon} **{meet.name}**")
+                st.caption(f"Races: {race_count} | Date: {meet.date or 'N/A'} | Imported: {meet.created_at.strftime('%Y-%m-%d %H:%M')}")
+
+            with col2:
+                if excluded:
+                    st.caption("❌ Excluded from rankings")
+                else:
+                    st.caption("✅ Included in rankings")
+
+            with col3:
+                button_label = "Include" if excluded else "Exclude"
+                if st.button(button_label, key=f"toggle_{meet.id}"):
+                    db.toggle_meet_exclusion(meet.id)
+                    st.rerun()
+
+            st.divider()
 
     else:
         st.info("No meets imported yet. Go to 'Import Results' to add data.")
@@ -341,11 +353,13 @@ def class_district_rankings_page(db: Database):
     # Gender tabs
     tab_boys, tab_girls, tab_all = st.tabs(["Boys", "Girls", "All"])
 
-    # Get all individual results with valid times
+    # Get all individual results with valid times (excluding meets marked for exclusion)
     session = db.get_session()
     try:
-        results = session.query(IndividualResult).join(Race).filter(
-            IndividualResult.time_seconds.isnot(None)
+        from database import Meet
+        results = session.query(IndividualResult).join(Race).join(Meet).filter(
+            IndividualResult.time_seconds.isnot(None),
+            Meet.exclude_from_rankings == 0  # Only include non-excluded meets
         ).options(
             # eager load race and meet
             joinedload(IndividualResult.race).joinedload(Race.meet)

@@ -24,6 +24,7 @@ class Meet(Base):
     date = Column(String(100))
     url = Column(String(1000), unique=True)
     created_at = Column(DateTime, default=datetime.utcnow)
+    exclude_from_rankings = Column(Integer, default=0)  # 0 = include, 1 = exclude
 
     races = relationship("Race", back_populates="meet", cascade="all, delete-orphan")
 
@@ -262,5 +263,68 @@ class Database:
                 joinedload(Meet.races)
             ).order_by(Meet.created_at.desc()).all()
             return meets
+        finally:
+            session.close()
+
+    def toggle_meet_exclusion(self, meet_id: int) -> bool:
+        """Toggle meet exclusion from rankings. Returns new exclusion state."""
+        session = self.get_session()
+        try:
+            meet = session.query(Meet).filter_by(id=meet_id).first()
+            if meet:
+                meet.exclude_from_rankings = 1 if meet.exclude_from_rankings == 0 else 0
+                session.commit()
+                return bool(meet.exclude_from_rankings)
+            return False
+        finally:
+            session.close()
+
+    def get_rankings_by_class_district(self, class_name: str, district: str,
+                                       gender: Optional[str] = None,
+                                       limit: int = 50) -> List[IndividualResult]:
+        """Get rankings for a specific class and district"""
+        import csv
+        import os
+
+        # Load school classifications
+        csv_path = os.path.join(os.path.dirname(__file__), 'reference', 'missouri_schools.csv')
+        schools_in_district = []
+
+        try:
+            with open(csv_path, 'r', encoding='utf-8') as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    if row['Class'] == class_name and row['District'] == district:
+                        schools_in_district.append(row['School'])
+        except FileNotFoundError:
+            pass  # If CSV not found, return empty list
+
+        if not schools_in_district:
+            return []
+
+        session = self.get_session()
+        try:
+            query = session.query(IndividualResult).options(
+                joinedload(IndividualResult.race).joinedload(Race.meet)
+            ).join(Race).join(Meet)
+
+            # Filter by gender
+            if gender:
+                query = query.filter(Race.gender == gender)
+
+            # Exclude meets marked for exclusion
+            query = query.filter(Meet.exclude_from_rankings == 0)
+
+            # Filter by schools in this district
+            query = query.filter(IndividualResult.team.in_(schools_in_district))
+
+            # Filter out invalid times
+            query = query.filter(IndividualResult.time_seconds.isnot(None))
+
+            # Order by time
+            query = query.order_by(IndividualResult.time_seconds.asc())
+
+            results = query.limit(limit).all()
+            return results
         finally:
             session.close()
