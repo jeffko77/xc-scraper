@@ -2,6 +2,19 @@
 
 ## Latest Updates
 
+### Deployment Fixes (2025-10-06)
+
+**Fixed:** Streamlit Cloud import errors
+- Added Python path insertion in `app.py` to fix module import issues
+- Created `packages.txt` with `libpq-dev` for PostgreSQL support
+- Created `.streamlit/config.toml` for proper configuration
+- Added comprehensive deployment guide (DEPLOYMENT.md)
+
+**Files Added:**
+- `packages.txt` - System dependencies for Streamlit Cloud
+- `.streamlit/config.toml` - Streamlit configuration
+- `DEPLOYMENT.md` - Complete deployment guide
+
 ### Meet Exclusion & Class/District Rankings (2025-10-06)
 
 **Added:** Meet exclusion from rankings

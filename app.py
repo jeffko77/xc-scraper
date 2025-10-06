@@ -1,8 +1,14 @@
 """
 Streamlit app for MileSplit XC Results
 """
-import streamlit as st
+import sys
 import os
+
+# Ensure the current directory is in the Python path for imports
+if os.path.dirname(__file__) not in sys.path:
+    sys.path.insert(0, os.path.dirname(__file__))
+
+import streamlit as st
 from typing import Optional
 from scraper import MileSplitScraper
 from database import Database, IndividualResult, Race
