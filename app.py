@@ -430,19 +430,18 @@ def class_district_rankings_page(db: Database):
         csv = df_sorted[['athlete', 'team', 'class', 'district', 'time', 'grade', 'race', 'meet']].to_csv(index=False)
         st.download_button(label=f"📥 Download {gender_label} CSV", data=csv, file_name=f"class_district_rankings_{gender_label}_{class_filter}_{district_filter}.csv", mime='text/csv')
 
-    # Inject gender into df rows if available by querying Race.gender earlier; we didn't include it before — create it now
-    # Note: results were loaded from ORM where Race.gender exists; we must ensure the dataframe has the 'gender' column
+    # Inject gender into df rows if available by querying athlete_gender
+    # Note: results were loaded from ORM where athlete_gender exists; we must ensure the dataframe has the 'gender' column
     if 'gender' not in df.columns:
-        # Re-query to get genders mapped per row (lightweight mapping using race names)
-        # Build a mapping from (team, athlete, time_seconds) -> gender by reusing the original results list
-        # Re-run a light DB pass to attach genders
+        # Re-query to get genders mapped per row
+        # Build a mapping from (team, athlete, time_seconds) -> gender
         session2 = db.get_session()
         try:
-            orm_results = session2.query(IndividualResult).join(Race).filter(IndividualResult.time_seconds.isnot(None)).options(joinedload(IndividualResult.race)).all()
+            orm_results = session2.query(IndividualResult).filter(IndividualResult.time_seconds.isnot(None)).all()
             gender_map = {}
             for r in orm_results:
                 key = (str(r.athlete_name), str(r.team or ''), str(r.time_seconds) if r.time_seconds is not None else None)
-                gender_map[key] = r.race.gender if r.race else None
+                gender_map[key] = r.athlete_gender
         finally:
             session2.close()
 

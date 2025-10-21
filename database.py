@@ -83,6 +83,7 @@ class IndividualResult(Base):
     athlete_name = Column(String(500), nullable=False)
     year_grade = Column(String(10))
     team = Column(String(500), nullable=False)
+    athlete_gender = Column(String(1))  # M or F - individual athlete gender (may differ from race.gender)
     time = Column(String(20), nullable=False)
     time_seconds = Column(Float)  # Time converted to seconds for sorting
 
@@ -94,6 +95,7 @@ class IndividualResult(Base):
         Index('idx_team', 'team'),
         Index('idx_race_athlete', 'race_id', 'athlete_name'),
         Index('idx_time_seconds', 'time_seconds'),
+        Index('idx_athlete_gender', 'athlete_gender'),
     )
 
     def __repr__(self):
@@ -188,6 +190,7 @@ class Database:
                         athlete_name=ir.athlete_name,
                         year_grade=ir.year_grade,
                         team=ir.team,
+                        athlete_gender=race_data.gender,  # Set athlete gender from race
                         time=ir.time,
                         time_seconds=ir.time_to_seconds()
                     )
@@ -213,7 +216,7 @@ class Database:
             )
 
             if gender:
-                query = query.join(Race).filter(Race.gender == gender)
+                query = query.filter(IndividualResult.athlete_gender == gender)
 
             results = query.all()
             return results
@@ -227,10 +230,10 @@ class Database:
         try:
             query = session.query(IndividualResult).options(
                 joinedload(IndividualResult.race).joinedload(Race.meet)
-            ).join(Race)
+            )
 
             if gender:
-                query = query.filter(Race.gender == gender)
+                query = query.filter(IndividualResult.athlete_gender == gender)
 
             if team:
                 query = query.filter(IndividualResult.team.ilike(f'%{team}%'))
@@ -310,7 +313,7 @@ class Database:
 
             # Filter by gender
             if gender:
-                query = query.filter(Race.gender == gender)
+                query = query.filter(IndividualResult.athlete_gender == gender)
 
             # Exclude meets marked for exclusion
             query = query.filter(Meet.exclude_from_rankings == 0)
